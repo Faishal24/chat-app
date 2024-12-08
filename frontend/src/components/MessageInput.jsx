@@ -83,7 +83,7 @@ const MessageInput = () => {
           <button
             type="button"
             className={`hidden sm:flex btn btn-circle ${
-              imagePreview ? "text-emerald-500" : "text-zinc-400"
+              imagePreview ? "text-emerald-500" : "text-base-content"
             }`}
             onClick={() => fileInputRef.current?.click()}
           >
@@ -93,7 +93,7 @@ const MessageInput = () => {
 
         <button
           type="submit"
-          className="btn btn-sm btn-circle"
+          className="btn btn-sm btn-circle size-10"
           disabled={!text.trim() && !imagePreview}
         >
           <Send className="size-5" />

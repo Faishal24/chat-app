@@ -61,7 +61,7 @@ const ProfilePage = () => {
                 />
               </label>
             </div>
-            <p className="text-sm text-zinc-400">
+            <p className="text-sm">
               {isUpdatingProfile
                 ? "Uploading..."
                 : "Click the camera icon to update your photo"}
@@ -70,21 +70,21 @@ const ProfilePage = () => {
 
           <div className="space-y-6">
             <div className="space-y-1.5">
-              <div className="text-sm text-zinc-400 flex items-center gap-2">
+              <div className="text-sm flex items-center gap-2">
                 <User className="w-4 h-4" />
                 Full Name
               </div>
-              <p className="px-4 py-2.5 bg-base-200 rounded-lg border">
+              <p className="px-4 py-2.5 bg-base-200 rounded-lg border border-base-300">
                 {authUser?.fullName}
               </p>
             </div>
 
             <div className="space-y-1.5">
-              <div className="text-sm text-zinc-400 flex items-center gap-2">
+              <div className="text-sm flex items-center gap-2">
                 <Mail className="w-4 h-4" />
                 Email Address
               </div>
-              <p className="px-4 py-2.5 bg-base-200 rounded-lg border">
+              <p className="px-4 py-2.5 bg-base-200 rounded-lg border border-base-300">
                 {authUser?.email}
               </p>
             </div>
@@ -99,7 +99,9 @@ const ProfilePage = () => {
               </div>
               <div className="flex items-center justify-between py-2">
                 <span>Account Status</span>
-                <span className="text-green-500">Active</span>
+                <div className="px-3 py-1 bg-green-300 border border-green-500 rounded-lg">
+                  <span className="text-green-700">Active</span>
+                </div>
               </div>
             </div>
           </div>
